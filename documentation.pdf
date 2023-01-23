@@ -1,0 +1,53 @@
+npm run start:dev
+by running above command dev server at port 3000 launches
+npm run build
+by running above command production build will be created 
+npm run start:prod
+by running above command production build will be launch at port 3000 
+npm run export 
+by running above command all pages SSG generated 
+npm run build:export
+by running above command two folders created one is .next and other is out with SSG
+
+when deploy the app archive the out folder with all the generated file of SSG and upload is to server and then unzip it
+
+.htaccess 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://outsourcetoasia.io/$1 [R,L]
+RewriteRule ^([^/]+)/$ $1.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/$ $1.html
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]
+RedirectMatch 301 /seo-digital-marketing/ /seo-services/
+RedirectMatch 301 /home/ /
+RewriteEngine on
+ErrorDocument 404  /404.html
+</IfModule>
+it will be modified as pe the requirements
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+
+301
+redirection is permanent redirection  
+this can also be done by using next js rewrite function
+
+example code snippet
+async rewrites() {
+   return [
+   {
+      source: '/seo-digital-marketing',
+      destination: '/seo-services',
+   },
+   ]
+},

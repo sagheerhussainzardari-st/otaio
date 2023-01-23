@@ -1,0 +1,897 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+:root {
+  --font-family-raleway: "Raleway", sans-serif;
+}
+$theme-colors: (
+  "primary": #d34e81,
+  "secondary": #0ca2d9,
+  "success": #1ce1ac,
+  "info": #ff7d50,
+  "warning": #ffbe0b,
+  "danger": #ff007f,
+  "light": #fff,
+  "dark": #000,
+);
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+body {
+  // font-family: "Raleway", sans-serif;
+  font-family: var(--font-family-raleway);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden !important;
+}
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  box-shadow: none !important;
+}
+// digital start up banner
+.plansPageDigitalStartupMainBanner {
+  background: url("/Assets/PlansAssets/DigitalStartup/DigitalStartupMainBannerImg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+//resourse out sourseing
+.plansPageResourcesOutsourcingMainBanner {
+  background: url("/Assets/PlansAssets/CallCenter/CallCenterMainBannerBg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+// PORTFOLIO SECTION
+.DevelopYourBrand {
+  background: url("/Assets/Portfolio/DevelopYourBrand.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  position: relative;
+}
+//
+.portfolioTabs .react-tabs {
+  display: block;
+}
+.portfolioTabs .react-tabs .react-tabs__tab-list {
+  flex-direction: row !important;
+  position: static !important;
+  background: transparent;
+  max-width: 100%;
+}
+.portfolioTabs .react-tabs__tab--selected::after {
+  background: none !important;
+}
+.portfolioTabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
+  background: transparent;
+  border: 1px solid #2d3eb2;
+  margin: 30px 10px;
+  width: 100%;
+  text-align: center;
+  padding: 15px !important;
+  border-radius: 20px;
+  color: #519fd4;
+  font-weight: 600;
+  transition: 1s;
+}
+.portfolioTabs .react-tabs__tab-panel {
+  background: transparent !important;
+  padding: 0 20px !important;
+}
+.portfolioTabs .react-tabs .react-tabs__tab-list .react-tabs__tab:hover,
+.portfolioTabs .react-tabs__tab--selected {
+  background-image: linear-gradient(45deg, #752340, #d14f82) !important;
+  transition: 1s;
+  color: #fff !important;
+}
+.portfolio-heading svg {
+  margin-top: 20px;
+}
+.portfolioTabsCards img {
+  height: 100%;
+  max-height: 300px;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  margin: 30px auto;
+  transition: all 3.5s;
+  max-width: 300px;
+}
+.portfolioTabsCards img:hover {
+  object-position: center bottom;
+  cursor: pointer;
+  transition: all 3.5s;
+}
+.mobile-app-development-category .slick-slide img {
+  width: 100%;
+  height: 100%;
+  max-width: 290px;
+  max-height: 560px;
+  min-height: 560px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  opacity: 0.4;
+  transition: 1s;
+}
+.mobile-app-development-category .slick-current img {
+  opacity: 1;
+}
+.mobile-app-development-category .slick-slide img:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-image: linear-gradient(100deg, #ffffff00, #00000075);
+  margin-top: 60px;
+  height: 100%;
+}
+.react-tabs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-image: linear-gradient(100deg, #ffffff00, #00000075);
+  margin-top: 60px;
+  height: 100%;
+}
+
+.react-tabs__tab {
+  list-style: none;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: #bbb;
+}
+
+.react-tabs__tab p {
+  margin-bottom: 0;
+  text-align: right;
+  font-weight: 600;
+}
+
+.react-tabs__tab--selected {
+  background-image: linear-gradient(100deg, #ffffff00, #00000075);
+  color: white;
+  position: relative;
+}
+
+.react-tabs__tab--selected::after {
+  content: "";
+  background: url("/Assets/Pricing/PricingActiveTabsImgs.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  width: 100%;
+  background: #0000003b;
+  border-radius: 30px 0 0 0;
+  padding: 50px;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 21px;
+}
+
+.panel-content {
+  text-align: center;
+}
+
+.TabsCard {
+  background: transparent;
+  margin: 0px auto 50px;
+  border: none;
+}
+
+.TabsCard .PricingCardImg {
+  background-image: linear-gradient(170deg, #00000069, #00000024);
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+}
+
+.cardText {
+  background: #00000045;
+  border-radius: 0 0 20px 20px;
+  min-height: 250px;
+}
+
+.cardText h4 {
+  color: #0ca3da;
+  font-weight: 700;
+}
+
+.dollar {
+  font-size: 3rem;
+}
+
+.cardText h4 .hour {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.centerCard h4 {
+  color: #000;
+}
+
+.TabsCard.TabsCardCenter {
+  background: #309fd0;
+  border-radius: 20px;
+}
+
+.PricingCardImg img {
+  height: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin: 50px auto;
+}
+
+.TabsCard.TabsCardCenter {
+  background-image: linear-gradient(135deg, #309fd0 60%, #83476c 100%);
+  border-radius: 20px;
+}
+.WhyChooseUs {
+  padding: 50px 10px;
+  position: relative;
+  margin: 100px auto;
+}
+.WhyChooseUs img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+}
+.WhyChooseUSCards.card {
+  background: transparent;
+  color: #fff;
+  border: 0;
+}
+// white label carousal
+.whitelabeling-price-category .slick-active .video-pagination-dots {
+  background: #d34e81 !important;
+}
+.whitelabeling-price-category .active-video-div {
+  position: relative;
+  z-index: 99999 !important;
+}
+.whitelabeling-price-category
+  .slick-slide.slick-active.slick-center.slick-current {
+  transform: scale(1.2);
+}
+.WhiteLabliblingSliderCards:hover {
+  background-image: linear-gradient(to right, #08678a, #0b96c8);
+  transition: 1s;
+}
+
+.WhiteLabliblingSliderCards:hover h3 span {
+  color: #fff;
+  transition: 1s;
+}
+
+.WhiteLabliblingSliderCards {
+  transition: 1s;
+}
+.PricingCard {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+}
+.PricingCard h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.PricingCard span {
+  color: #0b89be;
+  font-weight: 600;
+}
+.PricingCard h3 {
+  font-weight: 600;
+  margin: 20px auto;
+}
+.card.PricingCard ul {
+  list-style: none;
+  padding-left: 0;
+}
+.card.PricingCard ul li {
+  font-size: 1.3rem;
+  margin: 20px;
+}
+.ActivePricingCard {
+  background-image: linear-gradient(125deg, #109dd5, #71547c);
+}
+.ActivePricingCard span {
+  color: #000;
+}
+.OutsourcingBusiness,
+.CallCentreOutsourcingbg {
+  background: url("/Assets/PlansAssets/CallCenter/CallCenterBg02.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 10px;
+}
+.Business svg,
+.Operating svg {
+  font-size: 6rem;
+  font-weight: 700;
+  height: 100%;
+  max-height: 120px;
+}
+.Business svg text,
+.Operating svg text {
+  fill: #000 !important;
+  opacity: 0.3;
+  stroke: darkgray;
+}
+.Business h2,
+.Operating h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: -40px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0px 4px 7px rgba(0, 0, 0, 0.1),
+    0px 9px 12px rgba(0, 0, 0, 0.1);
+}
+.Business p,
+.Business h5,
+.Operating p,
+.Operating h5 {
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0px 4px 7px rgba(0, 0, 0, 0.1),
+    0px 9px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+}
+.PricingMainBanner {
+  background: url("/Assets/Pricing/PricingAppDevelopmenBg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.CreativeAndDesignMainBanner {
+  background: url("/Assets/Services/CreativeDesign/CreativeDesigningMainBanner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.WebDevelopmentMainBanner {
+  background: url("/Assets/Services/WebDevelopment/WebDevelopmentMainBanner.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.DigitalMarketingMainBanner {
+  background: url("/Assets/Services/DigitalMarketing/DigitalMarketingMainBanner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.AppDevelopmentMainBanner {
+  background: url("/Assets/Services/AppDevelopment/AppDevelopmentMainBanner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.VideoDevelopmentMainBanner {
+  background: url("/Assets/Services/VideoDevelopment/VideoAnimationMainBanner.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.ContentWrittingMainBanner {
+  background: url("/Assets/Services/ContentWritting/ContentWritingMainBanner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.CyberSecurityMainBanner {
+  background: url("/Assets/Services/CyberSecurity/CyberSecurityMainBanner.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.RocketUlOne ul li {
+  position: relative;
+  text-align: end;
+  margin: 10px auto;
+}
+.RocketUlOne ul,
+.RocketUlTwo ul {
+  list-style: none;
+  padding-left: 0;
+}
+.RocketUlTwo ul li {
+  position: relative;
+  margin: 10px auto;
+}
+.RocketUlOne ul li::after {
+  content: "";
+  background: url("/Assets/Icons/icon01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  top: 2px;
+}
+.RocketUlTwo ul li::before {
+  content: "";
+  background: url("/Assets/Icons/icon01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 2px;
+}
+.notfound .notfound-404 h3 {
+  font-family: cabin, sans-serif;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0;
+  letter-spacing: 3px;
+  padding-left: 6px;
+  text-align: center;
+}
+.notfound h2 {
+  font-family: cabin, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.notfound .notfound-404 h1 {
+  font-family: montserrat, sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 252px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: -40px;
+  margin-left: -20px;
+}
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.notfound .notfound-404 {
+  position: relative;
+  height: 240px;
+}
+.notfound .notfound-404 h1 > span {
+  text-shadow: -8px 0 0 #fff;
+}
+// modal css
+
+.ota-modal {
+  display: flex;
+  align-items: center;
+}
+.modal {
+  z-index: 99999 !important;
+  width: 100%;
+  height: auto;
+}
+.ota-modal .modal-content {
+  background-image: linear-gradient(to bottom right, #1599d1, #6a5982);
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  border: none;
+  padding: 50px 30px;
+  border-radius: 15px;
+  border: 1px solid #6a5982;
+}
+.ota-modal input {
+  border-radius: 50px;
+  background: #30709b;
+  color: #fff;
+  border: 1px solid #0b96c9;
+  padding: 5px;
+  border-left: none;
+}
+.ota-modal input::placeholder {
+  font-weight: bolder;
+}
+.ota-modal textarea::placeholder {
+  color: #87b8da;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.ota-modal input {
+  padding: 12px 20px;
+  margin: 10px auto;
+}
+.ota-modal textarea {
+  border: 1px solid #0b96c9;
+  border-right: none;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  color: #fff;
+  background: #30709b;
+  padding: 20px 5px;
+  padding-left: 15px;
+  font-size: 25px;
+  margin: auto;
+  resize: none;
+}
+
+.ota-modal input::placeholder {
+  color: #87b8da;
+}
+
+.ota-modal input:-ms-input-placeholder {
+  color: #87b8da;
+}
+
+.ota-modal input::-ms-input-placeholder {
+  color: #87b8da;
+}
+// modal css
+//
+.OurServicesHeading {
+  margin-top: -12px;
+}
+.StartupServicesSection {
+  margin-bottom: 50px;
+}
+.OurServicesHeadingUl {
+  position: relative;
+}
+.OurServicesHeadingUl h2::before {
+  content: "\f30b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #d34e81;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.OurServicesHeadingUl ul {
+  list-style: none;
+}
+.OurServicesHeadingUl ul li {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 10px;
+  font-weight: 500;
+}
+.OurServicesHeadingUl ul li::before {
+  content: "";
+  background: url("/Assets/Icons/icon01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+}
+.OurServicesHeadingUl {
+  position: relative;
+}
+.OurServicesHeadingUl h2::before {
+  content: "\f30b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #d34e81;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.OurServicesHeadingUl ul {
+  list-style: none;
+}
+.OurServicesHeadingUl ul li {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 10px;
+  font-weight: 500;
+}
+.OurServicesHeadingUl ul li::before {
+  content: "";
+  background: url("/Assets/Icons/icon01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+}
+.BgText {
+  background: -webkit-linear-gradient(#9b9b9b 20%, #ebebeb 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  font-weight: 800;
+  opacity: 0.7 !important;
+  line-height: 0;
+  z-index: 9999;
+}
+
+// Apply No Button
+.PricingApplyNowBtn {
+  background-image: linear-gradient(45deg, #109dd5, #8d4062);
+  display: inline-block;
+  padding: 15px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 50%;
+  margin: auto;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  left: 0;
+  outline: none;
+  border: 0;
+}
+// Apply No Button
+.BrandFont li {
+  font-size: 0.9rem !important;
+  line-height: 1.2;
+  margin: 30px auto !important;
+}
+.PackageAndPricing {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 40px 10px 20px;
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  min-height: 150px;
+  max-height: 150px;
+}
+.PackageAndPricing h3,
+.PackageAndPricing h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+.planServicesprovidingSvg svg,
+.planServicesSvg svg {
+  font-size: 6rem;
+  font-weight: 700;
+  height: 100%;
+  max-height: 120px;
+}
+.planServicesSvg svg text {
+  opacity: 0.09;
+}
+.planServicesSvg h2 {
+  color: #000;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-top: -50px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0px 4px 7px rgba(0, 0, 0, 0.1),
+    0px 9px 12px rgba(0, 0, 0, 0.1);
+}
+.planServicesSvg h5,
+.planServicesSvg p {
+  color: #000;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0px 4px 7px rgba(0, 0, 0, 0.1),
+    0px 9px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+}
+.PlanOccBg {
+  background-image: url("/Assets/PlansAssets/CallCenter/PlanOccBg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 50px 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .portfolioTabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
+    margin: 10px auto !important;
+  }
+  .portfolioTabs .react-tabs .react-tabs__tab-list .react-tabs__tab {
+    background: transparent;
+    border: 1px solid #2d3eb2;
+    margin: 30px 10px;
+    width: 100%;
+    text-align: center;
+    padding: 15px !important;
+    border-radius: 20px;
+    color: #519fd4;
+    font-weight: 600;
+    transition: 1s;
+  }
+  .portfolioTabs .react-tabs .react-tabs__tab-list {
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+}
+//
+.seobanner-bg {
+  background: url("/Assets/Services/SEO/SearchEngineOptimization.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.searchengineoptimization img {
+  max-height: 400px !important;
+  width: auto !important;
+  height: 100%;
+}
+.ota-route-loader {
+  position: relative !important;
+  height: 100vh !important;
+  overflow:hidden !important;
+  z-index: 100000 !important;
+  overflow:hidden !important;
+
+}
+.ota-route-loader img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  -webkit-animation: rotation 5s infinite linear;
+
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+.socialmediamarketing {
+  background: url("/Assets/Services/SocialMediaMarketing.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.leadgenbanner-bg {
+  background: url("/Assets/Services/LeadGenaration/Lead-Generation.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 10px;
+  height: 100vh;
+}
+.cursor-pointer{
+  cursor:pointer
+}
+.pricing-list{
+  height:550px;
+  overflow-y:scroll;
+}
+
+.ResourceOutsourcingProcessCard img {
+  max-width: 140px;
+  margin: 40px auto;
+}
+
+.centerLine {
+  position: absolute;
+  width: 100% !important;
+  max-width: 2px !important;
+  height: 100%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  padding: 0;
+  background: #5078a4;
+}
+
+@media screen and (max-width: 991px){
+  .centerLine {
+    display: none;
+  }
+}

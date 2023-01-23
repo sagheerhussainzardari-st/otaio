@@ -1,0 +1,5 @@
+Sitemap: https://www.outsourcetoasia.io/sitemap.xml
+User-agent: *
+Allow: /*
+Disallow: /api/*
+Disallow: https://www.youtube-nocookie.com/embed/ihI6htV2XRs
