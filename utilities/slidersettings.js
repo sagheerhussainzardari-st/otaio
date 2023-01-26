@@ -115,6 +115,7 @@ var logoSliderSettings = {
       }
    ]
 };
+
 const ourMobileAppDevelopmentPortfolioCarousal = {
    className: "center",
    // infinite: true,

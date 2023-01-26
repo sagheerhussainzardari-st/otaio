@@ -481,7 +481,7 @@ span.navbar-brand img {
 }
 
 .homeMainBanner {
-  background: url("/Assets/HomeAssets/home_page_main_banner1.jpg") no-repeat; 
+  background: url("/Assets/HomeAssets/home_page_main_banner1.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -842,7 +842,7 @@ a.learn-btn:hover {
   z-index: 9999;
 }
 
-.sagheer-div-get-started{
+.sagheer-div-get-started {
   z-index: 9999;
 }
 
@@ -1279,6 +1279,11 @@ a.schedulecall:hover {
   color: #0e81b8;
   font-weight: 600;
   line-height: 1.5;
+}
+
+.ResidualPartner {
+  background-image: url("/Assets/AmazonFBA/cta-bg.png");
+  padding: 50px 15px;
 }
 
 .servicesBox,
@@ -2519,6 +2524,10 @@ top: 50%; */
     flex-direction: column-reverse !important;
   }
 
+  .mobile-view.columnInitail .col:nth-child(even) .WhyChooseUSCards div {
+    flex-flow: column !important;
+  }
+
   .WhyChooseUs img {
     width: 100% !important;
     max-width: 80px;
@@ -3017,6 +3026,19 @@ top: 50%; */
   color: #fff;
 }
 
+.heroListItem {
+  list-style: none;
+}
+
+.heroListItem li {
+  margin-bottom: 10px;
+}
+
+.heroListItem li img {
+  margin-right: 10px;
+  width: 20px;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -3246,10 +3268,33 @@ iframe#\35 NOcTQn4xKTSvpnICCcj {
   margin-bottom: 20px;
 }
 
+.FBAServe h2 {
+  font-size: 56px;
+}
+
+.FBAserveSec {
+  margin-top: 80px;
+}
+
 @media screen and (max-width: 991px) {
   .nftTabs .nav-pills .nav-link.active {
     margin-left: 0px;
   }
+
+  .FBAServe h2 {
+    font-size: 26px;
+  }
+
+  .heroListItem li {
+    display: flex;
+    align-items: center;
+  }
+
+  .heroListItem li img {
+    margin: 0;
+    margin-right: 10px;
+  }
+
 }
 
 .secondaryDropDown .dropdown-menu {
@@ -3265,19 +3310,19 @@ iframe#\35 NOcTQn4xKTSvpnICCcj {
   color: #fff;
 }
 
-.testmonialsSlider .accordion-button:not(.collapsed){
+.testmonialsSlider .accordion-button:not(.collapsed) {
   color: #fff;
 }
 
 
-.imageClassHideen{
+.imageClassHideen {
   width: 0px;
   height: 0px;
   color: transparent;
 }
 
 @media screen and (max-device-width: 800px) {
-  .imageClassHideen{
+  .imageClassHideen {
     width: 100px;
     padding: 10px;
     margin-top: 20px;
@@ -3290,7 +3335,7 @@ iframe#\35 NOcTQn4xKTSvpnICCcj {
     text-align: center;
     width: 100%;
   }
-    
+
 }
 
 
@@ -3299,14 +3344,14 @@ iframe#\35 NOcTQn4xKTSvpnICCcj {
 }
  */
 
-@media screen and (max-device-width: 800px) {  
+@media screen and (max-device-width: 800px) {
   .secondaryDropDown.show.dropend {
-    overflow: hidden; 
+    overflow: hidden;
   }
 }
 
 
-.footerBark{
+.footerBark {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3314,6 +3359,94 @@ iframe#\35 NOcTQn4xKTSvpnICCcj {
   padding: 2px;
 }
 
-.logoFooterBark{
+.logoFooterBark {
   margin-right: 30px;
+}
+
+
+.productSlider {
+  margin-top: 50px;
+  height: 600px;
+}
+
+.productSlider .slick-slide.slick-center {
+  position: relative;
+  transform: scale(1.1);
+  top: 5px
+}
+
+.productSlider .slick-slide.slick-center img {
+  border: 1.5px solid transparent
+}
+
+.productSlider .slick-slide.slick-center {
+  margin: 0 15px;
+}
+
+.productSlider .slick-slide.slick-center:before {
+  position: absolute;
+  content: '';
+  background: url('/Assets/AmazonFBA/mobile-case.webp') center no-repeat;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 99999;
+  top: 0;
+  background-size: calc(100% - 15px), 100%;
+  filter: drop-shadow(2px -2px 3px black)
+}
+
+.productSlider .slick-slide img {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.productSlider .slick-slide.slick-center>img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important
+}
+
+.productSlider .slick-dots li button:before {
+  font-size: 10px;
+  z-index: 999
+}
+
+.slick-dots li.slick-active button:before {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10px
+}
+
+.productSlider .slick-track {
+  margin-left: -45px;
+}
+
+.mainSliderFBA {
+  margin-top: 100px;
+}
+
+@media (max-width:600px) {
+  .productSlider {
+    height: auto;
+  }
+
+  .productSlider .slick-slide.slick-center:before {
+    background-size: 195px;
+  }
+
+  .productSlider .slick-slide.slick-center {
+    margin: 0;
+  }
+
+  .productSlider .slick-slide img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .productSlider .slick-track {
+    margin-left: 0px;
+  }
+
+
 }
